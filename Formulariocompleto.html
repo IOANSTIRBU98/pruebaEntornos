@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang "es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulariocompleto</title>
+</head>
+<body>
+	<form>
+    <h1>EJERCICIO FORMULARIO COMPLETO</h1>
+    <h2>Formulario de registro</h2>
+    <p>los campos marcados con un asterisco son obligatorios</p>
+	
+    	<fieldset>
+    		<legend>¿Quien eres?</legend>
+    				<label for="name">Nombre*</label>
+					 	<input type="name" maxlength="20" name="nombre" placeholder="Pedro" required autofocus>
+    				<label for="username">Apellidos*</label> 
+						<input type="username" maxlength="40"   name="apellidos" placeholder="Ronaldo" required="">
+    <br>
+    				<label for="email">Correo electr&oacute;nico*</label>
+						<input type="email" maxlength="40" name="correo electronico" placeholder="Pedro@Ronaldo.com" required="">
+    				Fecha de nacimiento <input type="date" name="fecha">
+    	</fieldset>
+    	<fieldset>
+    		<legend>¿De donde eres?</legend>
+    				<label for="name">Ciudad</label> 
+						<input type="name" name="ciudad" placeholder="TuCiudad" >
+    <br>
+    				<label>C&oacute;digo Postal</label> 
+						<input type="text" placeholder="00000" pattern="[0-9]{5,3}">
+    <br>
+    				Pa&iacute;s
+    	<select name="pais">
+        	<option value="Albania">Albania</option>
+    	</select>
+    	</fieldset>
+    	<fieldset>
+    		<legend>¿C&oacute;mo quieres iniciar sesi&oacute;n?</legend>	  
+    				<label for="name">Nombre de usuario*</label>
+					 	<input type="name" name="nombre de usuario" min="4" max="4" pattern="EI-ZI">
+    				<title>letras del alfabeto &iacute;ngles y n&uacute;meros, minimo 4 caracteres</title>
+    <br>
+    				<label>Contrase&ntilde;a*</label>
+					 	<input type="password" name="contraseña" required pattern="[a-z A-Z 0-9]{4,}">
+    <br>
+    				<label>Repetir contraseña*</label>
+					 <input type="password" name="contraseña"required pattern="[a-zA-Z0-9-_.]{8,}">
+    	</fieldset>
+    	<fieldset>
+    		<legend>Condiciones de registro</legend>
+    				<label>Deseo recibir ofertas de la Organizaci&oacute;n</label>
+					 <input type="radio" name="Condiciones de registro" value="Una vez al dia" checked="checked">Una vez al d&iacute;a 
+    		<input type="radio" name="Condiciones de registro" value="Una vez a la semana">Una vez a la semana
+    		<input type="radio" name="Condiciones de registro" value="Una vez al mes">Una vez al mes
+    <br>
+    		<input type="checkbox" name="" value="">Acepto el acuerdo de servicios, la declaraci&oacute;n de privacidad y la declaraci&oacute;n de uso de cookies
+    	</fieldset>
+    	<input type="button" name="Crear cuenta" value="Crear cuenta"><br>
+	</form>
+</body>
+</html>
